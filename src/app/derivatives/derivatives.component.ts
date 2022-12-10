@@ -19,4 +19,8 @@ export class DerivativesComponent {
                           {name:'shareef3',age:21,package:'20',Role:'fullstack'},
                           {name:'shareef4',age:35,package:'80',Role:'fullstack'}]
 
+
+     public today : any = new Date()                     
+
+
   }
