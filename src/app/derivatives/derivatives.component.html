@@ -6,3 +6,32 @@
 <h3 *ngIf="time>=0 && time<12">Good Morning</h3>
 <h3 *ngIf="time>=12 && time<20">Good Afternoon</h3>
 <h3 *ngIf="time>=20 && time<25">Good night</h3>
+
+<select name="" id="">
+    <option *ngFor="let name of names" value="">
+            {{name}}
+    </option>
+</select>
+
+
+<label *ngFor="let name of names" for=""><button>{{name}} </button> <br><br></label>
+
+
+<table border="2">
+    <thead>
+        <tr>
+          <th *ngFor="let de of head">{{de}}</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let details of table">
+
+            <td>{{details.name | uppercase}}</td>
+            <td [ngStyle]="{'color':details.age>=30?'red':'black'}">{{details.age}}</td>
+            <td [ngClass]="{'red':details.package<=20,'yellow':details.package>20&&details.package<60,'green':details.package>60}">{{details.package}}</td>
+            <td>{{details.Role}}</td>
+           
+        </tr>
+    </tbody>
+</table>
