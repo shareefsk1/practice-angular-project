@@ -9,6 +9,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { FormsModule } from '@angular/forms';
+import { DerivativesComponent } from './derivatives/derivatives.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FormsModule } from '@angular/forms';
     LoginComponent,
     DashboardComponent,
     CalculatorComponent,
-    DataBindingComponent
+    DataBindingComponent,
+    DerivativesComponent
   ],
   imports: [
     BrowserModule,
