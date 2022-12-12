@@ -4,8 +4,10 @@ import { CalculatorComponent } from './calculator/calculator.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { DerivativesComponent } from './derivatives/derivatives.component';
+import { GpayComponent } from './gpay/gpay.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
+import { TableComponent } from './table/table.component';
 
 const routes: Routes = [
   {path:"", component:LoginComponent},
@@ -13,7 +15,9 @@ const routes: Routes = [
   {path:"dashboard", component:DashboardComponent ,children:[{path:"home", component:HomeComponent},
                     {path:"calculator", component:CalculatorComponent},
                     {path:"data-binding", component:DataBindingComponent},
-                    {path:"derivatives", component:DerivativesComponent}] }
+                    {path:"derivatives", component:DerivativesComponent},
+                    {path:'table', component:TableComponent},
+                    {path:'Gpay',component:GpayComponent}     ] }
   
   
 ];

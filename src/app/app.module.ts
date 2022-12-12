@@ -10,6 +10,8 @@ import { CalculatorComponent } from './calculator/calculator.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { FormsModule } from '@angular/forms';
 import { DerivativesComponent } from './derivatives/derivatives.component';
+import { TableComponent } from './table/table.component';
+import { GpayComponent } from './gpay/gpay.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { DerivativesComponent } from './derivatives/derivatives.component';
     DashboardComponent,
     CalculatorComponent,
     DataBindingComponent,
-    DerivativesComponent
+    DerivativesComponent,
+    TableComponent,
+    GpayComponent
   ],
   imports: [
     BrowserModule,
