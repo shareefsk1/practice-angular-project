@@ -1,0 +1,16 @@
+<table border="2" class="table">
+    <thead>
+        <tr>
+            <th *ngFor="let heads of head">{{heads}}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let values of value">
+            <td>{{values.color}}</td>
+            <td>{{values.type}}</td>
+            <td>{{values.registration}}</td>
+            <td [ngStyle]="{'color': values.capacity > 5? 'red':'white'}">{{values.capacity}}</td>
+        </tr>
+    </tbody>
+</table>
+

@@ -7,6 +7,7 @@ import { DerivativesComponent } from './derivatives/derivatives.component';
 import { GpayComponent } from './gpay/gpay.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
+import { ProductsComponent } from './products/products.component';
 import { TableComponent } from './table/table.component';
 
 const routes: Routes = [
@@ -17,7 +18,8 @@ const routes: Routes = [
                     {path:"data-binding", component:DataBindingComponent},
                     {path:"derivatives", component:DerivativesComponent},
                     {path:'table', component:TableComponent},
-                    {path:'Gpay',component:GpayComponent}     ] }
+                    {path:'Gpay',component:GpayComponent},
+                    {path:'products', component:ProductsComponent}     ] }
   
   
 ];

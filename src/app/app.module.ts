@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 import { DerivativesComponent } from './derivatives/derivatives.component';
 import { TableComponent } from './table/table.component';
 import { GpayComponent } from './gpay/gpay.component';
+import { ProductsComponent } from './products/products.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { GpayComponent } from './gpay/gpay.component';
     DataBindingComponent,
     DerivativesComponent,
     TableComponent,
-    GpayComponent
+    GpayComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,
