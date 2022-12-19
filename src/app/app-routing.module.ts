@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AuthenticationGuard } from './authentication.guard';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
@@ -13,7 +14,7 @@ import { TableComponent } from './table/table.component';
 const routes: Routes = [
   {path:"", component:LoginComponent},
   {path:"login", component:LoginComponent},
-  {path:"dashboard", component:DashboardComponent ,children:[{path:"home", component:HomeComponent},
+  {path:"dashboard", component:DashboardComponent, canActivate: [AuthenticationGuard] ,children:[{path:"home", component:HomeComponent},
                     {path:"calculator", component:CalculatorComponent},
                     {path:"data-binding", component:DataBindingComponent},
                     {path:"derivatives", component:DerivativesComponent},

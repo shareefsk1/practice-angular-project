@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -8,7 +10,7 @@ import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DerivativesComponent } from './derivatives/derivatives.component';
 import { TableComponent } from './table/table.component';
 import { GpayComponent } from './gpay/gpay.component';
@@ -30,7 +32,9 @@ import { ProductsComponent } from './products/products.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
